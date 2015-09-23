@@ -61,7 +61,18 @@ FOUNDATION_EXPORT const unsigned char ReactiveCocoaVersionString[];
 #import <ReactiveCocoa/RACTuple.h>
 #import <ReactiveCocoa/RACUnit.h>
 
-#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+#ifdef TARGET_OS_TV
+	#import <ReactiveCocoa/UIBarButtonItem+RACCommandSupport.h>
+	#import <ReactiveCocoa/UIButton+RACCommandSupport.h>
+	#import <ReactiveCocoa/UICollectionReusableView+RACSignalSupport.h>
+	#import <ReactiveCocoa/UIControl+RACSignalSupport.h>
+	#import <ReactiveCocoa/UIGestureRecognizer+RACSignalSupport.h>
+	#import <ReactiveCocoa/UISegmentedControl+RACSignalSupport.h>
+	#import <ReactiveCocoa/UITableViewCell+RACSignalSupport.h>
+	#import <ReactiveCocoa/UITableViewHeaderFooterView+RACSignalSupport.h>
+	#import <ReactiveCocoa/UITextField+RACSignalSupport.h>
+	#import <ReactiveCocoa/UITextView+RACSignalSupport.h>
+#elif __IPHONE_OS_VERSION_MIN_REQUIRED
 	#import <ReactiveCocoa/MKAnnotationView+RACSignalSupport.h>
 	#import <ReactiveCocoa/UIActionSheet+RACSignalSupport.h>
 	#import <ReactiveCocoa/UIAlertView+RACSignalSupport.h>
