@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.license = { :type => 'MIT', :file => 'LICENSE.md' }
   
   s.source = {
-    :git => 'https://github.com/ReactiveCocoa/ReactiveCocoa.git',
-    :branch => 'rex'
+    :git => 'https://github.com/edc1591/ReactiveCocoa.git',
+    :branch => 'master'
   }
 
   s.ios.deployment_target = '8.0'
