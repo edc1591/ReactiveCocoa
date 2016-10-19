@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
 
   s.module_map = 'ReactiveCocoa/module.modulemap'
 
-  s.source_files = 'ReactiveCocoa/**/*.swift'
+  s.source_files = 'ReactiveCocoa/**/*'
   s.ios.exclude_files = 'ReactiveCocoa/AppKit/*'
 end
